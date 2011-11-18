@@ -1,0 +1,49 @@
+{
+   "abstract" : "POE eris message dispatcher",
+   "author" : [
+      "Brad Lhotsky <brad.lhotsky@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.110440",
+   "license" : [
+      "bsd"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "POE-Component-Server-eris",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "POE" : 0,
+            "POE::Component::Server::TCP" : 0,
+            "strict" : 0,
+            "warnings" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "English" : 0,
+            "Pod::Coverage::TrustPod" : 0,
+            "Test::More" : 0,
+            "Test::Perl::Critic" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/reyjrar/POE-Component-Server-eris.git",
+         "web" : "https://github.com/reyjrar/POE-Component-Server-eris"
+      }
+   },
+   "version" : "0.1"
+}
+
