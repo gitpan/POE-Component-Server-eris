@@ -6,13 +6,15 @@ META.json
 META.yml
 Makefile.PL
 README
+README.mkdn
 dist.ini
 docs/with-rsyslog.mdown
 docs/with-syslog-ng.mdown
 examples/eris-stdin.pl
 examples/eris-tcpstream.pl
 lib/POE/Component/Server/eris.pm
+t/00-compile.t
 t/author-critic.t
-t/release-kwalitee.t
+t/release-eol.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

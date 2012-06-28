@@ -12,7 +12,8 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "POE eris message dispatcher",
   "AUTHOR" => "Brad Lhotsky <brad.lhotsky\@gmail.com>",
   "BUILD_REQUIRES" => {
-    "English" => 0,
+    "File::Find" => 0,
+    "File::Temp" => 0,
     "Pod::Coverage::TrustPod" => 0,
     "Test::More" => 0,
     "Test::Perl::Critic" => 0
@@ -30,7 +31,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.1",
+  "VERSION" => "0.7",
   "test" => {
     "TESTS" => "t/*.t"
   }
