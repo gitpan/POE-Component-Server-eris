@@ -8,7 +8,7 @@ use POE qw(
 
 # ABSTRACT: POE eris message dispatcher
 
-our $VERSION = '0.8';
+our $VERSION = '0.9';
 
 
 # Precompiled Regular Expressions
@@ -358,13 +358,9 @@ sub hangup_client {
         delete $heap->{match}{$word} unless keys %{ $heap->{match}{$word} };
     }
 
-
-    if( exists $heap->{debug}{$sid} ) {
-        delete $heap->{debug}{$sid};
-    }
-
-    if( exists $heap->{full}{$sid} ) {
-        delete $heap->{full}{$sid};
+    foreach my $channel (qw(debug full regex)) {
+        delete $heap->{$channel}{$sid}
+            if exists $heap->{$channel}{$sid};
     }
 
     debug("Client Termination Posted: $sid\n");
@@ -551,6 +547,7 @@ sub client_term {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -559,7 +556,7 @@ POE::Component::Server::eris - POE eris message dispatcher
 
 =head1 VERSION
 
-version 0.8
+version 0.9
 
 =head1 SYNOPSIS
 
@@ -765,4 +762,3 @@ This is free software, licensed under:
   The (three-clause) BSD License
 
 =cut
-
