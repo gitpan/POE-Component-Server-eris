@@ -52,7 +52,7 @@
          "web" : "https://github.com/reyjrar/POE-Component-Server-eris"
       }
    },
-   "version" : "1.0",
+   "version" : "1.0.1",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016001"
