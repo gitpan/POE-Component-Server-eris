@@ -8,7 +8,7 @@ use POE qw(
     Component::Server::TCP
 );
 
-our $VERSION = '1.4';
+our $VERSION = '1.5';
 
 my @_STREAM_NAMES = qw(subscribers match debug full regex);
 my %_STREAM_ASSISTERS = (
@@ -119,7 +119,7 @@ sub dispatcher_start {
 sub dispatch_message {
     my ($kernel,$heap,$msg) = @_[KERNEL,HEAP,ARG0];
 
-    _dispatch_message($kernel, $heap, [$msg]);
+    _dispatch_messages($kernel, $heap, [$msg]);
 }
 
 sub dispatch_messages {
@@ -663,7 +663,7 @@ POE::Component::Server::eris - POE eris message dispatcher
 
 =head1 VERSION
 
-version 1.4
+version 1.5
 
 =head1 SYNOPSIS
 
