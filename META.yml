@@ -24,7 +24,7 @@ requires:
   warnings: 0
 resources:
   repository: git://github.com/reyjrar/POE-Component-Server-eris.git
-version: 1.5
+version: 1.6
 x_Dist_Zilla:
   perl:
     version: 5.016003
