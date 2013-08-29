@@ -4,7 +4,7 @@
       "Brad Lhotsky <brad.lhotsky@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "bsd"
    ],
@@ -28,8 +28,10 @@
       },
       "runtime" : {
          "requires" : {
+            "AnyEvent::Graphite" : "0",
             "POE" : "0",
             "POE::Component::Server::TCP" : "0",
+            "Sys::Hostname" : "0",
             "strict" : "0",
             "warnings" : "0"
          }
@@ -52,7 +54,7 @@
          "web" : "https://github.com/reyjrar/POE-Component-Server-eris"
       }
    },
-   "version" : "1.6",
+   "version" : "1.7",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016003"
